@@ -1,0 +1,15 @@
+.nav-logo {
+  width: 10vh;
+  margin-right: 3vw;
+}
+
+.nls {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0 1vw;
+}
+
+.searchinput {
+  align-self: flex-end;
+}
