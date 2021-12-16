@@ -10,8 +10,8 @@ export default function Footer() {
             </p>
             <div>
             <a style={{textDecoration: "none"}} href="https://github.com/djebby" target="_blank"> 
-            <i class="bi bi-github"></i></a>
-            <a style={{textDecoration: "none"}} href="https://www.linkedin.com/in/djebby-firas/" target="_blank"> <i class="bi bi-linkedin"></i> </a>
+            <i className="bi bi-github"></i></a>
+            <a style={{textDecoration: "none"}} href="https://www.linkedin.com/in/djebby-firas/" target="_blank"> <i className="bi bi-linkedin"></i> </a>
             </div>
         </div>
     )

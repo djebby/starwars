@@ -16,7 +16,8 @@ export default function Main({keyword}) {
     const [species,setSpecies] = useState([]);
     const [planets,setPlanets] = useState([]);
     const [oldKeyword, setOldKeyword] = useState(keyword);
-    axios.defaults.baseURL = "https://swapi.dev/api";
+    axios.defaults.baseURL = "https://swapi.py4e.com/api";
+
     let {pathname} = useLocation();
     const [oldPath,setOldPath] = useState(pathname);
 
@@ -25,6 +26,7 @@ export default function Main({keyword}) {
             axios.get(`/people?search=${keyword}`)
             .then(res=>{
                 setPeople(res.data.results);
+                console.log(res.data.results);
             });
             setOldKeyword(keyword);
             setOldPath(pathname);

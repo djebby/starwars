@@ -27,42 +27,6 @@ export default function Nav({setKeyword2}) {
 
     return (
 
-        // <Navbar bg="dark" variant="dark">
-        //     <Container>
-        //         <Navbar.Brand>
-        //             <NavLink to="">
-        //             <img  src={logo} alt="The Brand" className="d-inline-block align-top nav-logo" /> {"  "}
-        //             </NavLink>
-        //         </Navbar.Brand>
-
-        //         <Navv className="me-auto" >
-        //             <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}} to="people"> People </NavLink>   
-        //             <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}} to="films">Films</NavLink> 
-        //             <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}}to="starships">Starships</NavLink> 
-        //             <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}}to="vehicles">Vehicles</NavLink>   
-        //             <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}}to="species">Species</NavLink> 
-        //             <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}}to="planets">Planets</NavLink> 
-                    
-        //         </Navv>
-                
-        //         {
-
-        //             (<Form className="d-flex">
-        //             <FormControl
-        //             type="search"
-        //             placeholder="Search"
-        //             className="me-2"
-        //             aria-label="Search"
-        //             onChange={changed}
-        //             ref={searchKey}
-        //             />
-        //             </Form>)
-                
-        //         }
-        //     </Container>
-        // </Navbar>
-
-
 
 
     <div className="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -86,17 +50,6 @@ export default function Nav({setKeyword2}) {
                     <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}}to="species">Species</NavLink> 
                     <NavLink className="nls" style={({isActive})=>{ return {color: isActive ? "#61dafb" : "", borderBottom: isActive ? "solid 5px #61dafb" : ""};}}to="planets">Planets</NavLink> 
                 </ul>
-                    {/* <Form className="d-flex ms-auto" onChange={changed}
-                     onClick={submitted}>
-                     <FormControl
-                     type="search"
-                     placeholder="Search"
-                     className="me-2"
-                     aria-label="Search"
-                     
-                     ref={searchKey}
-                     />
-                     </Form> */}
 
                     <form className="d-flex ms-auto" onChange={changed} onClick={changed}>
                         <input className="form-control me-3 searchinput" ref={searchKey} type="search" placeholder="Search" aria-label="Search" />
